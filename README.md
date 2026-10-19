@@ -19,10 +19,8 @@ Protects NodeBB's standard registration flow using [ALTCHA](https://altcha.org/)
 From your NodeBB installation directory, install the plugin:
 
 ```bash
-npm install /path/to/nodebb-plugin-altcha
+npm install https://github.com/sweetppro/nodebb-plugin-altcha
 ```
-
-Replace `/path/to/nodebb-plugin-altcha` with the path to your local plugin directory.
 
 Then:
 
