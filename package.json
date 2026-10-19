@@ -1,0 +1,14 @@
+{
+	"name": "nodebb-plugin-altcha",
+	"version": "0.1.0",
+	"description": "ALTCHA proof-of-work captcha for NodeBB registrations",
+	"main": "library.js",
+	"license": "MIT",
+	"keywords": ["nodebb", "plugin", "altcha", "captcha", "registration"],
+	"engines": { "node": ">=20" },
+	"nbbpm": { "compatibility": "^3.0.0 || ^4.0.0" },
+	"dependencies": {
+		"altcha": "^3.2.3",
+		"altcha-lib": "^2.6.0"
+	}
+}

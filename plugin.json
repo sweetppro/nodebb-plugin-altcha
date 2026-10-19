@@ -1,0 +1,15 @@
+{
+	"id": "nodebb-plugin-altcha",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "static:app.load", "method": "init" },
+		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
+		{ "hook": "filter:register.build", "method": "addWidget" },
+		{ "hook": "filter:register.check", "method": "checkRegistration" },
+		{ "hook": "action:settings.set", "method": "onSettingsSet" }
+	],
+	"scripts": ["static/lib/client.js"],
+	"acpScripts": ["static/lib/admin.js"],
+	"templates": "templates",
+	"languages": "languages"
+}

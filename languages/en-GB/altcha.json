@@ -1,0 +1,8 @@
+{
+	"label": "Verification",
+	"error-required": "Please complete the verification before registering.",
+	"error-invalid": "Verification failed. Please try again.",
+	"error-expired": "Verification expired. Please try again.",
+	"error-used": "This verification was already used. Please try again.",
+	"loading": "Verification is still loading. Please try again in a moment."
+}
