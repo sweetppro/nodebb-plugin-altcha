@@ -1,12 +1,11 @@
 {
 	"name": "nodebb-plugin-altcha",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "ALTCHA proof-of-work captcha for NodeBB registrations",
 	"main": "library.js",
 	"license": "MIT",
 	"keywords": ["nodebb", "plugin", "altcha", "captcha", "registration"],
 	"engines": { "node": ">=20" },
-	"nbbpm": { "compatibility": "^3.0.0 || ^4.0.0" },
 	"dependencies": {
 		"altcha": "^3.2.3",
 		"altcha-lib": "^2.6.0"
@@ -14,5 +13,8 @@
 	"repository": {
   		"type": "git",
   		"url": "git+https://github.com/sweetppro/nodebb-plugin-altcha.git"
-	}
+	},
+	"nbbpm": {
+    "compatibility": "^4.16.0"
+  	},
 }
