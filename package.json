@@ -1,6 +1,6 @@
 {
 	"name": "nodebb-plugin-altcha",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "ALTCHA proof-of-work captcha for NodeBB registrations",
 	"main": "library.js",
 	"license": "MIT",
