@@ -10,7 +10,7 @@
 	"dependencies": {
 		"altcha": "^3.2.3",
 		"altcha-lib": "^2.6.0"
-	}
+	},
 	"repository": {
   		"type": "git",
   		"url": "git+https://github.com/sweetppro/nodebb-plugin-altcha.git"
