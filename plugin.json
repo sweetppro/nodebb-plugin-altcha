@@ -4,8 +4,11 @@
 	"hooks": [
 		{ "hook": "static:app.load", "method": "init" },
 		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
-		{ "hook": "filter:register.build", "method": "addWidget" },
+		{ "hook": "filter:register.build", "method": "onRegisterBuild" },
+		{ "hook": "filter:login.build", "method": "onLoginBuild" },
+		{ "hook": "filter:reset.build", "method": "onResetBuild" },
 		{ "hook": "filter:register.check", "method": "checkRegistration" },
+		{ "hook": "filter:login.check", "method": "checkLogin" },
 		{ "hook": "action:settings.set", "method": "onSettingsSet" }
 	],
 	"scripts": ["static/lib/client.js"],

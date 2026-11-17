@@ -1,8 +1,10 @@
 {
-	"label": "Verification",
-	"error-required": "Please complete the verification before registering.",
-	"error-invalid": "Verification failed. Please try again.",
-	"error-expired": "Verification expired. Please try again.",
-	"error-used": "This verification was already used. Please try again.",
+	"form-register": "registration",
+	"form-login": "login",
+	"form-reset": "password reset",
+	"error-required": "Please complete the %1 verification.",
+	"error-invalid": "The %1 verification failed. Please try again.",
+	"error-expired": "The %1 verification expired. Please try again.",
+	"error-used": "This %1 verification was already used. Please try again.",
 	"loading": "Verification is still loading. Please try again in a moment."
 }

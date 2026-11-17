@@ -6,10 +6,18 @@ define('admin/plugins/altcha', ['settings', 'alerts'], function (Settings, alert
 	const ACP = {};
 
 	ACP.init = function () {
-		Settings.load('altcha', $('.altcha-settings'));
+		const $form = $('.altcha-settings');
+
+		Settings.load('altcha', $form, function () {
+			// The server knows the effective state (including defaults for never-saved keys),
+			// so it is authoritative for the switches.
+			$form.find('[data-effective]').each(function () {
+				$(this).prop('checked', $(this).attr('data-effective') === '1');
+			});
+		});
 
 		$('#save').on('click', function () {
-			Settings.save('altcha', $('.altcha-settings'), function () {
+			Settings.save('altcha', $form, function () {
 				alerts.success('ALTCHA settings saved');
 			});
 		});
